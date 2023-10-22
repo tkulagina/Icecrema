@@ -92,11 +92,13 @@
     }
 }
 
-/*@include tablet {
-    .hero_title {
-
+@include tablet {
+    .hero > .container {    
+        height: 415px;
+        background-image: url(../images/hero-dots-tablet.svg);
     }
-}*/
+
+}
 
 @include desktop {
 
