@@ -1,0 +1,126 @@
+/*
+.background {
+    background-color: var(--background-color);
+    background-image: url(../src/images/products/background-desktop-1x.png);
+}
+
+.section_lable.black,
+.section_title.black {
+    color: var(--second-text-color);
+}
+
+.products_list {    
+    display: flex;
+    justify-content: space-between;
+}
+
+.products_list_item {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products_name-box::before {
+    content: '';    
+    position: absolute;
+    background-size: cover;
+    width: 302px;
+    height: 302px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;    
+}
+
+.products_name-box.green::before {
+    background: rgba(156, 190, 143, 0.7);
+    box-shadow: 0 8 30 0 rgba(10, 136, 23, 0.25);
+}
+
+.products_name-box.yellow::before {
+    background: rgba(248, 210, 78, 0.7);
+    box-shadow: 0 8 30 0 rgba(153, 114, 23, 0.25);
+}
+
+.products_name-box.brown::before {
+    background: rgba(213, 117, 63, 0.7);
+    box-shadow: 0 8 30 0 rgba(0, 0, 0, 0.25);
+}
+
+.products_name-box::after {
+    content: '';
+    position: absolute;    
+
+    background-size: cover;
+    width: 302px;
+    height: 302px;
+    top: -180px;
+    left: 9%;
+    
+    border-radius: 50%;
+}
+
+.products_name-box.green::after {
+    background-image: url(../src/images/products/products1-desktop-1x.png);
+}
+
+.products_name-box.yellow::after {
+    background-image: url(../src/images/products/products2-desktop-1x.png);
+}
+
+.products_name-box.brown::after {
+    background-image: url(../src/images/products/products3-desktop-1x.png);
+}
+
+.products_name-box {
+    display: inline-block;
+    width: 370px;
+    height: 536px;
+    border: 1px solid transparent;
+    border-radius: 24px;
+
+    padding-top: 165px;
+    padding-bottom: 60px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.products_name-box.green {
+    background-color: #AEC6A5;
+}
+
+.products_name-box.yellow {
+    background-color: #EFD478;
+}
+
+.products_name-box.brown {
+    background-color: #D6936D;
+}
+
+.products_name {
+    margin-bottom: 65px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.23;
+    text-align: center;
+
+    color: var(--second-text-color);
+}
+
+.products_descript{
+    width: 246px;
+   font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+
+    color: var(--second-text-color);
+}
+
+.products_arrow {
+    display: inline-flex;
+    width: 40px;
+    height: 16px;
+    justify-content: center;
+    fill: var(--second-text-color);
+}*/

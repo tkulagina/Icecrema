@@ -1,0 +1,58 @@
+/*.section_title.cow {
+    margin-bottom: 82px;
+}
+
+.about-wrap {
+    display: flex;
+    padding-top: 45px;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.img-wrap::before {
+    content: '';
+      position: absolute;
+      top: -39px;
+      left: 0%;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: var(--accent-color);
+      box-shadow: 0 8 30 0 rgba(153, 114, 23, 0.25);
+      border-radius: 250px;
+}
+
+.about_descript {
+    width: 463px;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 1.93;
+    text-align: left;
+}
+
+.about-box {
+    margin-left: 109px;
+    padding-top: 90px;
+    padding-bottom: 86px;
+}
+
+.about_btn {
+    min-width: 164px;
+    height: 42px;
+    margin-bottom: 3px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    font-family: inherit;   
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28;
+    
+    text-align: center;
+    cursor: pointer;
+
+    background-color: var(--accent-color);
+}*/
