@@ -92,9 +92,16 @@
     }
 }
 
+/*@include tablet {
+    .hero_title {
+
+    }
+}*/
+
 @include desktop {
 
-.hero_title {
+.hero_title,
+.title-accent {
     width: 367px;
     margin-top: 45px;
     margin-bottom: 28px;
