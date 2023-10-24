@@ -351,7 +351,7 @@ img {
   .container-header {
     padding-top: 8px;
   }
-  .logo {
+  .logo-img {
     width: 60px;
     height: 65px;
     margin-right: 0;
@@ -414,7 +414,7 @@ img {
 
 .hero > .container {
   position: relative;
-  height: 502px;
+  height: 453px;
   background-image: url(../images/hero-dots-tel.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -441,6 +441,12 @@ img {
   color: var(--main-text-color);
   background-color: var(--main-color);
   cursor: pointer;
+  transition: color var(--time-duration) var(--timing-function);
+  transition: border var(--time-duration) var(--timing-function);
+}
+
+.hero_btn_poduct:hover {
+  border: 2px solid var(--hover-color);
 }
 
 .hero_btn_about {
@@ -454,11 +460,20 @@ img {
   color: var(--accent-color);
   background-color: var(--main-color);
   cursor: pointer;
+  transition: color var(--time-duration) var(--timing-function);
+}
+
+.hero_btn_about:hover {
+  color: var(--hover-color);
+}
+
+.hero_btn_about:focus {
+  color: var(--background-color);
 }
 
 .hero_img {
   position: absolute;
-  top: 57%;
+  top: 52%;
   left: 25%;
 }
 
@@ -468,14 +483,101 @@ img {
     padding-top: 40px;
   }
   .hero > .container {
-    height: 415px;
-    background-position: bottom;
+    height: 357px;
+    background-image: url(../images/hero-dots-mobile.svg);
+    background-size: 330px;
+    background-position: bottom right;
+  }
+  .hero_img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
   }
 }
 @media screen and (min-width: 768px) {
+  .descript-box,
+  .hero_arrow,
+  .hero_info,
+  .hero_pic {
+    display: block;
+  }
+  .hero_title {
+    padding-top: 14px;
+    margin-bottom: 0;
+  }
   .hero > .container {
-    height: 415px;
+    height: 349px;
     background-image: url(../images/hero-dots-tablet.svg);
+    background-size: 768px;
+  }
+  .container_box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .descript {
+    margin-top: 28px;
+  }
+  .descript_item:last-child {
+    margin-top: 20px;
+  }
+  .descript_item {
+    display: block;
+  }
+  .descript_item_number {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 4px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.22;
+    text-align: right;
+    color: var(--second-text-color);
+  }
+  .descript_item_word {
+    font-size: 8px;
+    line-height: 1.22;
+    text-align: right;
+  }
+  .hero_info {
+    width: 165px;
+    margin-left: 184px;
+    font-family: var(--third-font);
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+    text-align: left;
+  }
+  .hero_arrow {
+    width: 40px;
+    height: 16px;
+    fill: var(--main-text-color);
+    margin-left: 184px;
+    margin-top: 29px;
+  }
+  .hero_btn {
+    margin-top: -9px;
+    margin-bottom: 39px;
+  }
+  .hero_btn_poduct {
+    margin-right: 12px;
+    padding: 8px 22px;
+    font-size: 14px;
+    line-height: 1.28;
+    color: var(--second-text-color);
+  }
+  .hero_btn_about {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .hero_img {
+    top: 5%;
+    left: 50%;
+  }
+  .hero_pic {
+    position: absolute;
+    top: 50%;
+    left: 4%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -486,72 +588,44 @@ img {
     margin-bottom: 28px;
     font-size: 38px;
     line-height: 1.26;
-    text-align: left;
   }
   .hero > .container {
     height: 591px;
     background-image: url(../images/hero-dots-desktop.svg);
+    background-size: 1200px;
   }
-  .container_box {
-    display: flex;
-    justify-content: space-between;
+  .hero_btn {
+    margin-top: -6px;
+    margin-bottom: 109px;
   }
-  .descript {
-    margin-top: 53px;
+  .hero_btn_poduct:focus {
+    color: var(--second-text-color);
+    border: 2px solid var(--hover-color);
   }
-  .descript_item:last-child {
-    margin-top: 16px;
+  .hero_img {
+    top: 5%;
+    left: 55%;
   }
-  .descript_item {
-    display: block;
+  .hero_pic {
+    top: 50%;
+    left: 1%;
   }
   .descript_item_number {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-bottom: 4px;
     font-size: 46px;
-    font-weight: 900;
-    line-height: 1.22;
-    text-align: right;
-    color: var(--second-text-color);
   }
   .descript_item_word {
     font-size: 14px;
-    line-height: 1.22;
-    text-align: right;
   }
   .hero_info {
     width: 200px;
     margin-left: 257px;
+    margin-bottom: 24px;
     font-size: 14px;
     line-height: 20px;
     text-align: left;
   }
   .hero_arrow {
-    width: 40px;
-    height: 16px;
-    fill: var(--main-text-color);
     margin-left: 257px;
-    margin-top: 24px;
-  }
-  .hero_img {
-    position: absolute;
-    top: 57%;
-    left: 25%;
-  }
-  .hero_btn {
-    margin-bottom: 111px;
-  }
-  .hero_btn_poduct {
-    margin-right: 12px;
-    padding: 10px 32px;
-    font-size: 14px;
-    line-height: 1.28;
-  }
-  .hero_btn_about {
-    padding: 10px 22px;
-    font-size: 14px;
-    line-height: 1.28;
   }
 }
 /*
