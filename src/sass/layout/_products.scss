@@ -1,7 +1,17 @@
-/*
 .background {
     background-color: var(--background-color);
-    background-image: url(../src/images/products/background-desktop-1x.png);
+    background-image: url(../images/products/background-mob-1x.png);
+    background-size: cover;
+}
+  
+@include retina {
+    .background {   
+        background-image: url(../images/products/background-mob-2x.png);
+    }
+  }
+
+  .section_title {
+    margin-bottom: 148px;
 }
 
 .section_lable.black,
@@ -11,22 +21,44 @@
 
 .products_list {    
     display: flex;
-    justify-content: space-between;
-}
-
-.products_list_item {
-    position: relative;
-    display: inline-flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+.products_list_item {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+}
+
+.products_list_item + .products_list_item {
+    margin-top: 168px;
+}
+
+.products_name-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 420px;
+    border: 1px solid transparent;
+    border-radius: 24px;
+   
+    padding-top: 123px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .products_name-box::before {
     content: '';    
     position: absolute;
     background-size: cover;
-    width: 302px;
-    height: 302px;
+    width: 200px;
+    height: 200px;
     top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -53,38 +85,43 @@
     position: absolute;    
 
     background-size: cover;
-    width: 302px;
-    height: 302px;
-    top: -180px;
-    left: 9%;
+    width: 200px;
+    height: 200px;
+    top: -27%;
+    left: 14%;
     
     border-radius: 50%;
 }
 
 .products_name-box.green::after {
-    background-image: url(../src/images/products/products1-desktop-1x.png);
+    background-image: url(../images/products/products1-mob-1x.png);
 }
+
+@include retina {
+    .products_name-box.green::after {
+        background-image: url(../images/products/products1-mob-2x.png);
+    }
+  }
 
 .products_name-box.yellow::after {
-    background-image: url(../src/images/products/products2-desktop-1x.png);
+    background-image: url(../images/products/products2-mob-1x.png);
 }
+
+@include retina {
+    .products_name-box.yellow::after {
+        background-image: url(../images/products/products2-mob-2x.png);
+    }
+  }
 
 .products_name-box.brown::after {
-    background-image: url(../src/images/products/products3-desktop-1x.png);
+    background-image: url(../images/products/products3-mob-1x.png);
 }
 
-.products_name-box {
-    display: inline-block;
-    width: 370px;
-    height: 536px;
-    border: 1px solid transparent;
-    border-radius: 24px;
-
-    padding-top: 165px;
-    padding-bottom: 60px;
-    padding-left: 64px;
-    padding-right: 64px;
-}
+@include retina {
+    .products_name-box.brown::after {
+        background-image: url(../images/products/products3-mob-2x.png);
+    }
+  }
 
 .products_name-box.green {
     background-color: #AEC6A5;
@@ -100,27 +137,203 @@
 
 .products_name {
     margin-bottom: 65px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.23;
+    line-height: 1.2;
     text-align: center;
+    text-transform: uppercase;
 
     color: var(--second-text-color);
 }
 
 .products_descript{
-    width: 246px;
-   font-size: 16px;
-    line-height: 1.75;
+    width: 200px;
+   font-size: 14px;
+    line-height: 1.79;
     text-align: center;
 
     color: var(--second-text-color);
 }
 
 .products_arrow {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 16px;
-    justify-content: center;
+    margin-top: auto;
     fill: var(--second-text-color);
-}*/
+}
+
+@include mobile {
+    .products_name-box {        
+        width: 320px;
+        height: 428px;
+        
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .products_name-box::after {       
+        left: 19%;       
+    }   
+}
+
+
+@include tablet {  
+    .background {
+    background-color: var(--background-color);
+    background-image: url(../images/products/background-tablet-1x.png);
+}
+  
+@include retina {
+    .background {   
+        background-image: url(../images/products/background-tablet-2x.png);
+    }
+  }
+
+  .section_title {
+    margin-bottom: 22px;
+}
+
+ .products_list {    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.products_name-box {        
+    width: 224px;
+    
+    padding-top: 108px;
+    padding-bottom: 12px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.products_name-box::after {       
+    left: 5%;       
+}   
+
+.products_name-box.green::after {
+    background-image: url(../images/products/products1-tablet-1x.png);
+}
+
+@include retina {
+    .products_name-box.green::after {
+        background-image: url(../images/products/products1-tablet-2x.png);
+    }
+  }
+
+.products_name-box.yellow::after {
+    background-image: url(../images/products/products2-tablet-1x.png);
+}
+
+@include retina {
+    .products_name-box.yellow::after {
+        background-image: url(../images/products/products2-tablet-2x.png);
+    }
+  }
+
+.products_name-box.brown::after {
+    background-image: url(../images/products/products3-tablet-1x.png);
+}
+
+@include retina {
+    .products_name-box.brown::after {
+        background-image: url(../images/products/products3-tablet-2x.png);
+    }
+  }
+
+  .products_name {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.products_descript{
+    width: 172px;   
+}
+
+}
+
+@include desktop {
+
+    .background {        
+        background-image: url(../images/products/background-desktop-1x.png);
+    }
+
+    @include retina {
+        .background {   
+            background-image: url(../images/products/background-desktop-2x.png);
+        }
+      }
+
+      .section_title {
+        margin-bottom: 136px;
+    }
+
+.products_name-box::before {
+    width: 302px;
+    height: 302px;    
+}
+
+.products_name-box::after {    
+    width: 302px;
+    height: 302px;
+    top: -180px;
+    left: 9%;    
+}
+
+.products_name-box.green::after {
+    background-image: url(../images/products/products1-desktop-1x.png);
+}
+
+@include retina {
+    .products_name-box.green::after {
+        background-image: url(../images/products/products1-desktop-2x.png);
+    }
+  }
+
+.products_name-box.yellow::after {
+    background-image: url(../images/products/products2-desktop-1x.png);
+}
+
+@include retina {
+    .products_name-box.yellow::after {
+        background-image: url(../images/products/products2-desktop-2x.png);
+    }
+  }
+
+.products_name-box.brown::after {
+    background-image: url(../images/products/products3-desktop-1x.png);
+}
+
+@include retina {
+    .products_name-box.brown::after {
+        background-image: url(../images/products/products3-desktop-2x.png);
+    }
+  }
+
+.products_name-box {    
+    width: 370px;
+    height: 536px;
+    
+    padding-top: 165px;
+    padding-bottom: 60px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.products_name {
+    margin-bottom: 65px;
+    font-size: 30px;    
+    line-height: 1.23;    
+}
+
+.products_descript{
+    width: 246px;
+    font-size: 16px;
+    line-height: 1.75;    
+}
+
+}

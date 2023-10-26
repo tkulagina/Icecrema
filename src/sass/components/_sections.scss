@@ -1,20 +1,42 @@
 .section_lable {
     margin-bottom: 12px;    
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 800;
-    line-height: 1.23;
+    line-height: 1.22;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.section_title {
-    margin-bottom: 303px;
-    font-size: 36px;
-    line-height: 1.25;
+.section_title {   
+    font-size: 30px;
+    line-height: 1.27;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .wrap {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+@include tablet {
+    .section_lable {         
+        font-size: 22px;
+    }
+
+    .section_title {        
+        font-size: 34px;        
+    }
+}
+
+@include desktop {
+    .section_lable {         
+        font-size: 30px;        
+        line-height: 1.23;
+    }
+    
+    .section_title {        
+        font-size: 36px;        
+    }
 }
