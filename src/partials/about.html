@@ -3,13 +3,27 @@
 <p class="section_lable ">tradition and love </p>
 <h2 class="section_title cow">how it’s made?</h2>
 <div class="about-wrap ">
-<div class="img-wrap">
-  <img src="./images/about/about-desktop-1x.png" alt="A cow" width="491" height="491">
-</div>
-  <div class="about-box">
+<div class="img-wrap">  
+    <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="./images/about/about-desktop-1x.png 1x,
+                  ./images/about/about-desktop-2x.png 2x"/>
+          <source
+            media="(min-width:768px)"
+            srcset="./images/about/about-tablet-1x.png 1x,
+            ./images/about/about-tablet-2x.png 2x"/>
+          <source
+            media="(min-width:480px)"
+            srcset="./images/about/about-mob-1x.png 1x,
+                  ./images/about/about-mob-2x.png  2x"/>
+          <img  class="about-img" src="./images/about/about-mob-1x.png" alt="A cow" />
+        </picture>     
+  </div>
+<div class="about-box">
 <p class="about_descript">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.</p>
-<p class="about_descript">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-<p class="about_descript">This is enough to choose ice cream and coffee for any mood!</p>
+<p class="about_descript bottom">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
+<p class="about_descript bottom">This is enough to choose ice cream and coffee for any mood!</p>
   <button class="about_btn" type="button">Read more &#62;</button>
 </div>
 </div>
