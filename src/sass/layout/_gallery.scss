@@ -1,0 +1,57 @@
+.background {    
+    background-color: var(--background-color);
+    background-image: url(../images/products/background-mob-1x.png);
+    background-size: cover;
+}
+  
+@include retina {
+    .background {   
+        background-image: url(../images/products/background-mob-2x.png);
+    }
+  }
+  /*.top {
+    position: relative; 
+  }
+
+  .top::before {
+    content: '';    
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+    background-color: var(--main-color);
+    min-width: 1000px;
+    height: 36px;    
+  }*/
+
+  .gallery_wrapper  {
+    position: relative;       
+    width: 280px;
+    height: 130px;
+    margin-top: -36px;    
+    border-radius: 8px;
+    top: 10%;
+    z-index: 20;
+  }
+
+  
+
+  @include mobile {
+    .gallery_wrapper {
+        width: 440px;
+        height: 204px;
+    }
+  }
+
+  @include tablet {
+    .gallery_wrapper {
+        width: 704px;
+        height: 327px;
+    }
+  }
+
+  @include desktop {
+    .gallery_wrapper {
+        width: 1013px;
+        height: 422px;
+    }
+  }
