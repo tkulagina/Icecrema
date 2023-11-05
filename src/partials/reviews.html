@@ -1,52 +1,62 @@
 <section class="reviews background">
     <div class="container">
-    <h2 class="section_title visually-hidden">Customer Reviews</h2>
-    
-    <img src="./images/slider/review1-desktop-1x.jpg" alt="A girl with long dark hair" width="85">
-  <p>I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
-  <p>Emily, Los Angeles</p>
-</div>
-  </section>
- <section class="contacts" id="contacts">
-  <div class="container">
-  <h2 class="section_title visually-hidden">Contacts</h2>
-<ul class="contact_list">
-  <li class="list">
-    <p>CAFE</p>
-    <p>Chicago</p>
-    <address>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</address>
-  <p>Monday - Friday</p>
-  <p>06:00 AM - 10:00 PM</p>
-  <p>Saturday - Sunday</p>
-  <p>08:00 AM - 16:00 PM</p>
-  <p>+61(0) 383 766 284</p>
-  <p>noreply@envato.com</p>
-  </li>
-  <li class="list">
-    <p>FOOD TRUCK</p>
-    <p>Los Angeles</p>
-    <address>1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</address>
-  <p>Monday - Friday</p>
-  <p>06:00 AM - 10:00 PM</p>
-  <p>Saturday - Sunday</p>
-  <p>08:00 AM - 16:00 PM</p>
-  <p>+61(0) 383 766 284</p>
-  <p>noreply@envato.com</p>
-  </li>
-  <li class="list">
-    <p>CAFE</p>
-    <p>New York</p>
-    <address>726 Sterling Pl, Brooklyn, NY 11222, USA</address>
-  <p>Monday - Friday</p>
-  <p>06:00 AM - 10:00 PM</p>
-  <p>Saturday - Sunday</p>
-  <p>08:00 AM - 16:00 PM</p>
-  <p>+61(0) 383 766 284</p>
-  <p>noreply@envato.com</p>
-  </li>
-</ul>
-<button type="button">Our Locations &#62;</button>
-<button type="button">Franchise &#62;</button>
-</div>
- </section>
-</main>
+      <h2 class="section_title visually-hidden">Customer Reviews</h2>
+
+      <div id="pane-1" class="customer-box is-active">
+        <div class="customer">
+          <img class="reviews-img"
+          srcset="./images/reviews/review1-desktop-1x.jpg 1x,
+                  ./images/reviews/review2-desktop-2x.jpg 2x"
+          src="./images/reviews/review1-desktop-1x.jpg"
+          alt="Emily"
+        />
+        </div>
+        <p class="reviews-text">
+          I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+          addition, you have beautiful serving, cozy atmosphere and polite staff.
+        </p>
+        <p class="client">Emily, Los Angeles</p>
+      </div>
+      <div id="pane-2" class="customer-box">
+        <div class="customer">
+          <img class="reviews-img"
+                srcset="./images/reviews/review3-desktop-1x.jpg 1x,
+                ./images/reviews/review3-desktop-2x.jpg 2x"
+                src="./images/reviews/review3-desktop-1x.jpg"
+                alt="Bryan"
+                />
+        </div>
+        <p class="reviews-text">
+          Every day we come to you with friends after classes in college. We love your ice cream and
+          casual atmosphere!
+        </p>
+        <p class="client">Bryan, New-York</p>
+      </div>
+      <div id="pane-3" class="customer-box">
+        <div class="customer">
+          <img class="reviews-img"
+                  srcset="./images/reviews/review2-desktop-1x.jpg 1x,
+                          ./images/reviews/review2-desktop-2x.jpg 2x"
+                  src="./images/reviews/review2-desktop-1x.jpg"
+                  alt="Diana"
+                />
+        </div>
+        <p class="reviews-text">
+          Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the
+          excellent service - always served politely and quickly!
+        </p>
+        <p class="client">Diana, Chicago</p>
+      </div>
+      <ul class="marker-list list">
+        <li class="marker">
+          <button class="marker-btn" data-id="pane-1" type="button"></button>
+        </li>
+        <li class="marker">
+          <button class="marker-btn" data-id="pane-2" type="button"></button>
+        </li>
+        <li class="marker">
+          <button class="marker-btn" data-id="pane-3" type="button"></button>
+        </li>
+      </ul>
+    </div>
+</section>
