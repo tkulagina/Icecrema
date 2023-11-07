@@ -1,3 +1,26 @@
+.footer.wrap {
+    padding-top: 1095px;
+}
+
+@include mobile {
+    .footer.wrap {
+        padding-top: 1103px;
+    }    
+}
+
+@include tablet {
+    .footer.wrap {
+        padding-top: 360px;
+    }    
+}
+
+@include desktop {
+    .footer.wrap {
+        padding-top: 636px;
+    }
+    
+}
+
 /*.footer {
     display: flex;
     justify-content: space-between;   
